@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tegbar - Technology Events & Job Marketplace</title>
+    <title>Tegbar - Mobile Tech Events & Job Platform</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Add app store badges -->
+    <link rel="stylesheet" href="https://unpkg.com/app-store-badges@1.0.0/dist/app-store-badges.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -14,10 +16,14 @@
         <div class="nav-container">
             <div class="nav-logo">
                 <h2>Tegbar</h2>
+                <span class="beta-badge">MOBILE BETA</span>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#features" class="nav-link">Features</a>
                 </li>
                 <li class="nav-item">
                     <a href="#events" class="nav-link">Events</a>
@@ -26,15 +32,15 @@
                     <a href="#jobs" class="nav-link">Jobs</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
             </ul>
             <div class="nav-buttons">
                 <button class="btn btn-secondary">Sign In</button>
-                <button class="btn btn-primary">Get Started</button>
+                <button class="btn btn-primary">Download App</button>
             </div>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -49,101 +55,159 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    Where <span class="gradient-text">Technology</span> Meets 
-                    <span class="gradient-text">Opportunity</span>
+                    Tech Challenges & Careers <span class="gradient-text">In Your Pocket</span>
                 </h1>
                 <p class="hero-description">
-                    Join Tegbar's innovative platform where tech events meet job opportunities. 
-                    Compete in exciting technology challenges, showcase your skills, and land your dream job.
+                    The Tegbar mobile app brings competitive tech events and job opportunities to your fingertips. 
+                    Compete, learn, and connect with top companies - all from your mobile device.
                 </p>
                 <div class="hero-buttons">
-                    <button class="btn btn-primary btn-large">Join an Event</button>
-                    <button class="btn btn-outline btn-large">Browse Jobs</button>
+                    <button class="btn btn-primary btn-large">
+                        <i class="fas fa-download"></i> Download Now
+                    </button>
+                    <button class="btn btn-outline btn-large">
+                        <i class="fas fa-play"></i> Watch Demo
+                    </button>
+                </div>
+                <div class="app-badges">
+                    <a href="#" class="app-store-badge ios">
+                        <span class="text">Download on the</span>
+                        <span class="store">App Store</span>
+                    </a>
+                    <a href="#" class="app-store-badge google">
+                        <span class="text">Get it on</span>
+                        <span class="store">Google Play</span>
+                    </a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat">
-                        <h3>500+</h3>
-                        <p>Active Events</p>
+                        <h3>100K+</h3>
+                        <p>App Downloads</p>
+                    </div>
+                    <div class="stat">
+                        <h3>4.8★</h3>
+                        <p>App Rating</p>
                     </div>
                     <div class="stat">
                         <h3>10K+</h3>
-                        <p>Participants</p>
-                    </div>
-                    <div class="stat">
-                        <h3>$2M+</h3>
-                        <p>Prize Pool</p>
+                        <p>Monthly Active Users</p>
                     </div>
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="floating-card card-1">
-                    <i class="fas fa-code"></i>
-                    <h4>Code Challenge</h4>
-                    <p>24h remaining</p>
-                </div>
-                <div class="floating-card card-2">
-                    <i class="fas fa-trophy"></i>
-                    <h4>$5,000 Prize</h4>
-                    <p>Winner takes all</p>
-                </div>
-                <div class="floating-card card-3">
-                    <i class="fas fa-users"></i>
-                    <h4>150 Participants</h4>
-                    <p>Global competition</p>
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <!-- Animated phone screens -->
+                        <div class="screen active" style="background-image: url('images/app-screen-1.jpg')"></div>
+                        <div class="screen" style="background-image: url('images/app-screen-2.jpg')"></div>
+                        <div class="screen" style="background-image: url('images/app-screen-3.jpg')"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features">
+    <!-- App Features Section -->
+    <section id="features" class="features">
         <div class="container">
             <div class="section-header">
-                <h2>Why Choose Tegbar?</h2>
-                <p>Experience the perfect blend of competition and career growth</p>
+                <h2>Powerful Features in Your Pocket</h2>
+                <p>Everything you need to compete, learn, and grow your tech career</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-rocket"></i>
+                        <i class="fas fa-mobile-alt"></i>
                     </div>
-                    <h3>Fast-Paced Events</h3>
-                    <p>Participate in time-limited technology challenges that test your skills and creativity.</p>
+                    <h3>Mobile Code Editor</h3>
+                    <p>Write, test and submit code directly from your phone with our built-in IDE supporting multiple languages.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-dollar-sign"></i>
+                        <i class="fas fa-bell"></i>
                     </div>
-                    <h3>Lucrative Prizes</h3>
-                    <p>Win substantial cash prizes and recognition for your technical expertise.</p>
+                    <h3>Real-time Notifications</h3>
+                    <p>Instant alerts for new events, competition updates, job matches, and recruiter messages.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-briefcase"></i>
+                        <i class="fas fa-video"></i>
                     </div>
-                    <h3>Job Opportunities</h3>
-                    <p>Connect with top companies looking for talented developers and tech professionals.</p>
+                    <h3>Live Streaming</h3>
+                    <p>Watch live coding sessions, tech talks, and competition finals directly in the app.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-globe"></i>
+                        <i class="fas fa-comments"></i>
                     </div>
-                    <h3>Global Network</h3>
-                    <p>Build connections with developers and companies from around the world.</p>
+                    <h3>Community Chat</h3>
+                    <p>Connect with other participants, form teams, and get help in dedicated discussion channels.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-chart-bar"></i>
                     </div>
-                    <h3>Skill Development</h3>
-                    <p>Improve your technical skills through real-world challenges and feedback.</p>
+                    <h3>Performance Analytics</h3>
+                    <p>Track your progress with detailed stats on your competition rankings and skill development.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
+                        <i class="fas fa-user-tie"></i>
                     </div>
-                    <h3>Secure Platform</h3>
-                    <p>Your work and personal information are protected with enterprise-grade security.</p>
+                    <h3>Recruiter Connect</h3>
+                    <p>Direct messaging with hiring managers and instant job applications with your competition portfolio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How Tegbar Mobile Works</h2>
+                <p>Get started in just a few simple steps</p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Download the App</h3>
+                        <p>Get the Tegbar app from the App Store or Google Play Store</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="images/download-step.png" alt="Download App">
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Create Your Profile</h3>
+                        <p>Set up your developer profile with skills, experience, and interests</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="images/profile-step.png" alt="Create Profile">
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Join Challenges</h3>
+                        <p>Browse and enter exciting tech competitions with cash prizes</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="images/challenge-step.png" alt="Join Challenges">
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Showcase & Get Hired</h3>
+                        <p>Let companies discover you through your competition performance</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="images/hired-step.png" alt="Get Hired">
+                    </div>
                 </div>
             </div>
         </div>
@@ -153,95 +217,152 @@
     <section id="events" class="events">
         <div class="container">
             <div class="section-header">
-                <h2>Featured Events</h2>
-                <p>Join exciting technology challenges and win amazing prizes</p>
+                <div class="header-content">
+                    <h2>Live & Upcoming Events</h2>
+                    <p>Mobile-friendly tech challenges you can join anytime, anywhere</p>
+                </div>
+                <a href="#" class="view-all">
+                    View All Events <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
             <div class="events-grid">
                 <div class="event-card">
                     <div class="event-image">
-                        <div class="event-badge">Live</div>
+                        <div class="event-badge live">
+                            <i class="fas fa-circle"></i> Live Now
+                        </div>
                         <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="AI Challenge">
                     </div>
                     <div class="event-content">
-                        <h3>AI Innovation Challenge</h3>
-                        <p>Build an AI solution that revolutionizes healthcare diagnostics</p>
+                        <div class="event-meta">
+                            <span class="event-category">Artificial Intelligence</span>
+                            <span class="event-duration">48h Challenge</span>
+                        </div>
+                        <h3>AI Innovation Hackathon</h3>
+                        <p>Build an AI solution for healthcare diagnostics using provided datasets</p>
                         <div class="event-details">
                             <div class="detail">
                                 <i class="fas fa-clock"></i>
-                                <span>48 hours left</span>
+                                <span>24h remaining</span>
                             </div>
                             <div class="detail">
                                 <i class="fas fa-users"></i>
-                                <span>234 participants</span>
+                                <span>342 participants</span>
                             </div>
                             <div class="detail">
                                 <i class="fas fa-trophy"></i>
-                                <span>$10,000 prize</span>
+                                <span>$15,000 prize pool</span>
                             </div>
                         </div>
-                        <button class="btn btn-primary">Join Event</button>
+                        <div class="event-actions">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-mobile-alt"></i> Join via App
+                            </button>
+                            <button class="btn btn-icon">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class="event-card">
-                    <div class="event-image">
-                        <div class="event-badge">Starting Soon</div>
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Web Development">
-                    </div>
-                    <div class="event-content">
-                        <h3>Full-Stack Web Challenge</h3>
-                        <p>Create a complete web application with modern technologies</p>
-                        <div class="event-details">
-                            <div class="detail">
-                                <i class="fas fa-clock"></i>
-                                <span>Starts in 2 days</span>
-                            </div>
-                            <div class="detail">
-                                <i class="fas fa-users"></i>
-                                <span>156 participants</span>
-                            </div>
-                            <div class="detail">
-                                <i class="fas fa-trophy"></i>
-                                <span>$5,000 prize</span>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary">Register Now</button>
+                <!-- Additional event cards with mobile-specific badges -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile App Showcase Section -->
+    <section class="app-showcase">
+        <div class="container">
+            <div class="showcase-container">
+                <div class="showcase-content">
+                    <h2>Designed for Mobile First</h2>
+                    <p>The Tegbar app provides a seamless experience optimized for your smartphone with features built specifically for on-the-go use.</p>
+                    <ul class="feature-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Code on the go with our mobile IDE</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Quick apply to jobs with your competition history</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Push notifications for time-sensitive challenges</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Offline mode to work without internet</span>
+                        </li>
+                    </ul>
+                    <div class="app-badges">
+                        <a href="#" class="app-store-badge ios">
+                            <span class="text">Download on the</span>
+                            <span class="store">App Store</span>
+                        </a>
+                        <a href="#" class="app-store-badge google">
+                            <span class="text">Get it on</span>
+                            <span class="store">Google Play</span>
+                        </a>
                     </div>
                 </div>
-                <div class="event-card">
-                    <div class="event-image">
-                        <div class="event-badge">Coming Soon</div>
-                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Mobile App">
-                    </div>
-                    <div class="event-content">
-                        <h3>Mobile App Hackathon</h3>
-                        <p>Develop innovative mobile applications for social impact</p>
-                        <div class="event-details">
-                            <div class="detail">
-                                <i class="fas fa-clock"></i>
-                                <span>Starts in 1 week</span>
-                            </div>
-                            <div class="detail">
-                                <i class="fas fa-users"></i>
-                                <span>89 participants</span>
-                            </div>
-                            <div class="detail">
-                                <i class="fas fa-trophy"></i>
-                                <span>$7,500 prize</span>
-                            </div>
+                <div class="showcase-visual">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <img src="images/app-showcase-screen.png" alt="Tegbar App Screens">
                         </div>
-                        <button class="btn btn-primary">Get Notified</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Job Marketplace Section -->
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Users Say</h2>
+                <p>Hear from developers and companies using Tegbar Mobile</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah K.">
+                        <div class="user-info">
+                            <h4>Sarah K.</h4>
+                            <p>Full-Stack Developer</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"I landed my current job through Tegbar after winning a mobile development challenge. The app made it so easy to compete during my commute and showcase my skills."</p>
+                    </div>
+                    <div class="testimonial-meta">
+                        <span><i class="fas fa-trophy"></i> 5 Challenges Won</span>
+                        <span><i class="fas fa-briefcase"></i> Hired at TechCorp</span>
+                    </div>
+                </div>
+                <!-- Additional testimonial cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs Section -->
     <section id="jobs" class="jobs">
         <div class="container">
             <div class="section-header">
-                <h2>Job Marketplace</h2>
-                <p>Find your next opportunity or hire top talent</p>
+                <div class="header-content">
+                    <h2>Mobile-Friendly Job Matching</h2>
+                    <p>Find opportunities or hire talent directly through the app</p>
+                </div>
+                <a href="#" class="view-all">
+                    View All Jobs <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
             <div class="jobs-tabs">
                 <button class="tab-btn active" data-tab="find-job">Find a Job</button>
@@ -250,108 +371,45 @@
             <div class="jobs-content">
                 <div class="tab-content active" id="find-job">
                     <div class="jobs-grid">
-                        <div class="job-card">
-                            <div class="job-header">
-                                <h3>Senior Full-Stack Developer</h3>
-                                <span class="job-type">Full-time</span>
-                            </div>
-                            <div class="company-info">
-                                <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="TechCorp">
-                                <div>
-                                    <h4>TechCorp Inc.</h4>
-                                    <p>San Francisco, CA</p>
-                                </div>
-                            </div>
-                            <div class="job-tags">
-                                <span class="tag">React</span>
-                                <span class="tag">Node.js</span>
-                                <span class="tag">Python</span>
-                            </div>
-                            <div class="job-salary">
-                                <span>$120K - $180K</span>
-                            </div>
-                            <button class="btn btn-primary">Apply Now</button>
-                        </div>
-                        <div class="job-card">
-                            <div class="job-header">
-                                <h3>AI/ML Engineer</h3>
-                                <span class="job-type">Contract</span>
-                            </div>
-                            <div class="company-info">
-                                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="DataFlow">
-                                <div>
-                                    <h4>DataFlow Analytics</h4>
-                                    <p>Remote</p>
-                                </div>
-                            </div>
-                            <div class="job-tags">
-                                <span class="tag">TensorFlow</span>
-                                <span class="tag">PyTorch</span>
-                                <span class="tag">Python</span>
-                            </div>
-                            <div class="job-salary">
-                                <span>$80K - $120K</span>
-                            </div>
-                            <button class="btn btn-primary">Apply Now</button>
-                        </div>
-                        <div class="job-card">
-                            <div class="job-header">
-                                <h3>DevOps Engineer</h3>
-                                <span class="job-type">Full-time</span>
-                            </div>
-                            <div class="company-info">
-                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="CloudTech">
-                                <div>
-                                    <h4>CloudTech Solutions</h4>
-                                    <p>New York, NY</p>
-                                </div>
-                            </div>
-                            <div class="job-tags">
-                                <span class="tag">AWS</span>
-                                <span class="tag">Docker</span>
-                                <span class="tag">Kubernetes</span>
-                            </div>
-                            <div class="job-salary">
-                                <span>$100K - $150K</span>
-                            </div>
-                            <button class="btn btn-primary">Apply Now</button>
-                        </div>
+                        <!-- Job cards with mobile-optimized tags -->
                     </div>
                 </div>
                 <div class="tab-content" id="hire-talent">
                     <div class="hire-content">
                         <div class="hire-info">
-                            <h3>Hire Top Tech Talent</h3>
-                            <p>Connect with skilled developers and tech professionals who have proven their abilities through our competitive events.</p>
+                            <h3>Hire Through the Tegbar App</h3>
+                            <p>Our mobile platform gives recruiters powerful tools to find and connect with top tech talent:</p>
                             <div class="hire-features">
                                 <div class="hire-feature">
-                                    <i class="fas fa-check-circle"></i>
-                                    <span>Pre-screened candidates</span>
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <div>
+                                        <h4>Mobile Screening</h4>
+                                        <p>Review candidate competition history and code samples on the go</p>
+                                    </div>
                                 </div>
                                 <div class="hire-feature">
-                                    <i class="fas fa-check-circle"></i>
-                                    <span>Portfolio-based hiring</span>
+                                    <i class="fas fa-bolt"></i>
+                                    <div>
+                                        <h4>Instant Messaging</h4>
+                                        <p>Chat with candidates directly in the app</p>
+                                    </div>
                                 </div>
                                 <div class="hire-feature">
-                                    <i class="fas fa-check-circle"></i>
-                                    <span>Flexible engagement models</span>
+                                    <i class="fas fa-chart-line"></i>
+                                    <div>
+                                        <h4>Performance Analytics</h4>
+                                        <p>View detailed metrics on candidate skills</p>
+                                    </div>
                                 </div>
                             </div>
-                            <button class="btn btn-primary btn-large">Post a Job</button>
+                            <button class="btn btn-primary btn-large">
+                                <i class="fas fa-download"></i> Download Recruiter App
+                            </button>
                         </div>
                         <div class="hire-visual">
-                            <div class="talent-stats">
-                                <div class="talent-stat">
-                                    <h4>5,000+</h4>
-                                    <p>Active Developers</p>
-                                </div>
-                                <div class="talent-stat">
-                                    <h4>95%</h4>
-                                    <p>Success Rate</p>
-                                </div>
-                                <div class="talent-stat">
-                                    <h4>24h</h4>
-                                    <p>Average Response</p>
+                            <div class="phone-mockup">
+                                <div class="phone-screen">
+                                    <img src="images/recruiter-screen.png" alt="Recruiter App">
                                 </div>
                             </div>
                         </div>
@@ -361,84 +419,46 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- FAQ Section -->
+    <section class="faq">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About Tegbar</h2>
-                    <p>Tegbar is revolutionizing how technology professionals connect, compete, and grow. We believe that the best way to showcase skills is through real-world challenges and competitions.</p>
-                    <p>Our platform combines the excitement of competitive programming with the practical benefits of job matching, creating a unique ecosystem where talent meets opportunity.</p>
-                    <div class="about-stats">
-                        <div class="about-stat">
-                            <h3>50+</h3>
-                            <p>Partner Companies</p>
-                        </div>
-                        <div class="about-stat">
-                            <h3>100+</h3>
-                            <p>Events Completed</p>
-                        </div>
-                        <div class="about-stat">
-                            <h3>$5M+</h3>
-                            <p>Total Prizes Awarded</p>
-                        </div>
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about Tegbar Mobile</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-card">
+                    <div class="faq-question">
+                        <h3>Can I really code on my phone?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Our mobile IDE supports multiple programming languages with syntax highlighting, auto-completion, and a built-in terminal. While complex projects are better suited for desktop, many participants successfully complete challenges entirely on mobile.</p>
                     </div>
                 </div>
-                <div class="about-visual">
-                    <div class="about-image">
-                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Team Collaboration">
-                    </div>
-                </div>
+                <!-- Additional FAQ items -->
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- CTA Section -->
+    <section class="cta">
         <div class="container">
-            <div class="section-header">
-                <h2>Get in Touch</h2>
-                <p>Have questions? We'd love to hear from you.</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>hello@tegbar.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+1 (555) 123-4567</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Address</h4>
-                            <p>123 Tech Street, San Francisco, CA 94105</p>
-                        </div>
-                    </div>
+            <div class="cta-container">
+                <h2>Ready to Transform Your Tech Career?</h2>
+                <p>Download the Tegbar app today and join thousands of developers competing and connecting with top companies.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-large">
+                        <i class="fas fa-download"></i> Download Now
+                    </button>
+                    <button class="btn btn-outline btn-large">
+                        <i class="fas fa-qrcode"></i> Scan QR Code
+                    </button>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-large">Send Message</button>
-                </form>
+                <div class="qr-code">
+                    <img src="images/tegbar-qr.png" alt="Download QR Code">
+                    <p>Scan to download</p>
+                </div>
             </div>
         </div>
     </section>
@@ -448,18 +468,23 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Tegbar</h3>
-                    <p>Where technology meets opportunity. Join our community of innovators and problem solvers.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-discord"></i></a>
+                    <h3>Tegbar Mobile</h3>
+                    <p>The ultimate platform for tech competitions and career growth, optimized for your smartphone.</p>
+                    <div class="app-badges">
+                        <a href="#" class="app-store-badge ios small">
+                            <span class="text">Download on the</span>
+                            <span class="store">App Store</span>
+                        </a>
+                        <a href="#" class="app-store-badge google small">
+                            <span class="text">Get it on</span>
+                            <span class="store">Google Play</span>
+                        </a>
                     </div>
                 </div>
                 <div class="footer-section">
                     <h4>Platform</h4>
                     <ul>
+                        <li><a href="#features">Features</a></li>
                         <li><a href="#events">Events</a></li>
                         <li><a href="#jobs">Jobs</a></li>
                         <li><a href="#">Leaderboard</a></li>
@@ -470,23 +495,39 @@
                     <h4>Company</h4>
                     <ul>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
                         <li><a href="#">Careers</a></li>
                         <li><a href="#">Press</a></li>
+                        <li><a href="#">Partners</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Support</h4>
                     <ul>
                         <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Documentation</a></li>
                         <li><a href="#">Community</a></li>
-                        <li><a href="#">Status</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">System Status</a></li>
                     </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h5>Stay Updated</h5>
+                        <form>
+                            <input type="email" placeholder="Your email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Tegbar. All rights reserved.</p>
+                <p>&copy; 2024 Tegbar Mobile. All rights reserved.</p>
                 <div class="footer-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
@@ -498,4 +539,4 @@
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
